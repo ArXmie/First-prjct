@@ -19,3 +19,4 @@
     "fullname": "Даня новый",
     "group_id": "3"
 }
+4) GET https://einruealtwrhdpmpbaik.supabase.co/rest/v1/grades?grade=gt.3&select=*
