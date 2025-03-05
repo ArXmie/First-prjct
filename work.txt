@@ -1,10 +1,10 @@
-1) https://einruealtwrhdpmpbaik.supabase.co/rest/v1/grades?id=eq.1
+1) PATCH https://einruealtwrhdpmpbaik.supabase.co/rest/v1/grades?id=eq.1
 тело
 {
     "grade": "4"
 }
 
-2) https://einruealtwrhdpmpbaik.supabase.co/rest/v1/works
+2) POST https://einruealtwrhdpmpbaik.supabase.co/rest/v1/works
 тело
 {
     "name": "кр2",
@@ -12,4 +12,10 @@
     "subject": "математика",
     "body": "3",
     "student": "3"
+}
+3) POST https://einruealtwrhdpmpbaik.supabase.co/rest/v1/students
+тело
+{
+    "fullname": "Даня новый",
+    "group_id": "3"
 }
