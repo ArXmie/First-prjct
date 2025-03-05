@@ -1,6 +1,5 @@
 1) PATCH https://einruealtwrhdpmpbaik.supabase.co/rest/v1/grades?id=eq.6
 тело
-
 {
     "grade": "5"
 }
