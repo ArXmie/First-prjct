@@ -1,0 +1,45 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/master
+1) PATCH https://einruealtwrhdpmpbaik.supabase.co/rest/v1/grades?id=eq.1
+тело
+{
+    "grade": "4"
+}
+
+2) POST https://einruealtwrhdpmpbaik.supabase.co/rest/v1/works
+тело
+{
+    "name": "кр2",
+    "desc": "6+6",
+    "subject": "математика",
+    "body": "3",
+    "student": "3"
+}
+3) POST https://einruealtwrhdpmpbaik.supabase.co/rest/v1/students
+тело
+{
+    "fullname": "Даня новый",
+    "group_id": "3"
+}
+4) GET https://einruealtwrhdpmpbaik.supabase.co/rest/v1/grades?grade=gt.3&select=*
+5) самое сложное
+создаем View table через SQL editor Supabase
+CREATE VIEW teacher_grade_count AS
+SELECT teacher_id, COUNT(work_id) AS work_count
+FROM grades
+GROUP BY teacher_id;
+
+<<<<<<< HEAD
+GET https://einruealtwrhdpmpbaik.supabase.co/rest/v1/teacher_grades_count?work_count=gt.2
+=======
+1) https://einruealtwrhdpmpbaik.supabase.co/rest/v1/grades?id=eq.1
+тело
+{
+    "grade": "4"
+}
+>>>>>>> fc86320 (первое)
+=======
+GET https://einruealtwrhdpmpbaik.supabase.co/rest/v1/teacher_grades_count?work_count=gt.2
+>>>>>>> origin/master
