@@ -1,6 +1,31 @@
 1) PATCH https://einruealtwrhdpmpbaik.supabase.co/rest/v1/grades?id=eq.6
 тело
-
+https://einruealtwrhdpmpbaik.supabase.co/rest/v1/teacher_ghttps://einruealtwrhdpmpbaik.supabase.co/rest/v1/teacher_grades_count?work_count=gt.2rades_count?work_count=gt.2
 {
     "grade": "5"
 }
+2) POST https://einruealtwrhdpmpbaik.supabase.co/rest/v1/works
+тело
+{
+    "name": "кр3",
+    "desc": "5+5",
+    "subject": "математика",
+    "body": "10",
+    "student": "2"
+}
+
+3) POST https://einruealtwrhdpmpbaik.supabase.co/rest/v1/students
+тело
+{
+    "fullname": "Даня новый",
+    "group_id": "3"
+}
+4) GET https://einruealtwrhdpmpbaik.supabase.co/rest/v1/teacher_grades_count?work_count=gt.2
+5)
+SQL Editor
+CREATE VIEW teacher_work_count2 as
+SELECT teacher_id, COUNT(work_id) AS work_count
+FROM grades
+GROUP BY teacher_id;
+
+GET https://einruealtwrhdpmpbaik.supabase.co/rest/v1/teacher_work_count2?work_count=gt.2
