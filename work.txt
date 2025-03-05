@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/master
 1) PATCH https://einruealtwrhdpmpbaik.supabase.co/rest/v1/grades?id=eq.1
 тело
 {
@@ -28,6 +31,7 @@ SELECT teacher_id, COUNT(work_id) AS work_count
 FROM grades
 GROUP BY teacher_id;
 
+<<<<<<< HEAD
 GET https://einruealtwrhdpmpbaik.supabase.co/rest/v1/teacher_grades_count?work_count=gt.2
 =======
 1) https://einruealtwrhdpmpbaik.supabase.co/rest/v1/grades?id=eq.1
@@ -36,3 +40,6 @@ GET https://einruealtwrhdpmpbaik.supabase.co/rest/v1/teacher_grades_count?work_c
     "grade": "4"
 }
 >>>>>>> fc86320 (первое)
+=======
+GET https://einruealtwrhdpmpbaik.supabase.co/rest/v1/teacher_grades_count?work_count=gt.2
+>>>>>>> origin/master
