@@ -1,0 +1,2 @@
+url - https://supabase.com/dashboard/project/einruealtwrhdpmpbaik
+apikey - GG562Onvd35661majz1552626zjjZJHFNsnzx
